@@ -34,7 +34,9 @@ While playing, an interval is running to fill strikes each 5 min.**(instead of a
 
 
 3 Stars:10 steps or less
+
 2 Stars: 15 steps or less
+
 1 Star: above 15 steps.
 
 #With each level cleared, a new level will be opened. **you can rate your level popularity from 0-5 after clearing a level.
