@@ -48,7 +48,7 @@ You can click on the avatar icon in order to change photo-choose from 3 photos, 
 
 
 
-Created By Kenar Ben Shitrit & Ori Winboim © 
+# Created By Kenar Ben Shitrit & Ori Winboim © 
 
 
 
