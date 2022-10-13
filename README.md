@@ -1,9 +1,9 @@
-## the-last-fugitive-game
+# The Last Fugitive Game
 
 
 Your goal is to cross the labyrinth,while avoiding from smart enemies,and obstacle on the road.
 
-# In order to play, identify within 2 options:
+## In order to play, identify within 2 options:
 1) Sign up as a user,provide email and password,unique nickname, gender (save all your progress,ability to edit profile,extra strikes benefit).
 2) Sign up as a guest-No details required (save all your progress, but can't edit profile,start with less strikes).
 
@@ -30,7 +30,7 @@ While playing, an interval is running to fill strikes each 5 min.**(instead of a
 **While the app go into background mode-a timeout is set to count time for 5 min(to know when your done playing and set the end date for game)
 --used for game statistics(total play time)
 
-# Point distribution- each level has it's rank:1-3 stars.
+## Point distribution- each level has it's rank:1-3 stars.
 
 
 3 Stars:10 steps or less
