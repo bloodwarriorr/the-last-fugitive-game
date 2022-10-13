@@ -1,4 +1,6 @@
-##the-last-fugitive-game
+## the-last-fugitive-game
+
+
 Your goal is to cross the labyrinth,while avoiding from smart enemies,and obstacle on the road.
 
 # In order to play, identify within 2 options:
@@ -29,13 +31,17 @@ While playing, an interval is running to fill strikes each 5 min.**(instead of a
 --used for game statistics(total play time)
 
 # Point distribution- each level has it's rank:1-3 stars.
+
+
 3 Stars:10 steps or less
 2 Stars: 15 steps or less
 1 Star: above 15 steps.
 
-# With each level cleared, a new level will be opened. **you can rate your level popularity from 0-5 after clearing a level.
+#With each level cleared, a new level will be opened. **you can rate your level popularity from 0-5 after clearing a level.
 
 ##User profile section:
+
+
 You can click on the avatar icon in order to change photo-choose from 3 photos, and change your nickname
 
 
