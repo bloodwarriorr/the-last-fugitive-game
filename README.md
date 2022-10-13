@@ -32,7 +32,7 @@ While playing, an interval is running to fill strikes each 5 min.**(instead of a
 
 ## Point distribution
 
---each level has it's rank:1-3 stars.
+Each level has it's rank:1-3 stars.
 
 3 Stars:10 steps or less
 
