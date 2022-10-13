@@ -26,7 +26,7 @@ Game is rendering with Window.requestAnimationFrame() functions,which request fr
 (render the map consistently-game engine)
 enemies are made up of major amount of .png assets, inside a JSON format.
 with css, we use animate properties to change between assets-thats how the enemies and the player looks dynamically moving.
-While playing, an interval is running to fill strikes each 5 min.**(instead of ad watch for now)
+While playing, an interval is running to fill strikes each 5 min (instead of ad watch for now).
 
 **While the app go into background mode-a timeout is set to count time for 5 min(to know when your done playing and set the end date for game)
 
