@@ -13,6 +13,7 @@ Tap on a bracket (mobile),you can move 1 step each turn.
 
 ## Rules
 You can't walk towards a bracket if it contains an obstacle
+
 If you walk through a bracket which is near to an enemy(1 bracket from him), He will eat you and you will loss
 You have 5 strikes for a registered user, 3 for guest.
 
@@ -28,6 +29,7 @@ with css, we use animate properties to change between assets-thats how the enemi
 While playing, an interval is running to fill strikes each 5 min.**(instead of ad watch for now)
 
 **While the app go into background mode-a timeout is set to count time for 5 min(to know when your done playing and set the end date for game)
+
 --used for game statistics(total play time)
 
 ## Point distribution
@@ -40,9 +42,11 @@ Each level has it's rank:1-3 stars.
 
 1 Star: above 15 steps.
 
-#With each level cleared, a new level will be opened. **you can rate your level popularity from 0-5 after clearing a level.
+#With each level cleared, a new level will be opened.
 
-##User profile section:
+#You can rate your level popularity from 0-5 after clearing a level.
+
+## User profile section:
 
 
 You can click on the avatar icon in order to change photo-choose from 3 photos, and change your nickname
