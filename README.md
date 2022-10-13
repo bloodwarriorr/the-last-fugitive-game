@@ -30,8 +30,9 @@ While playing, an interval is running to fill strikes each 5 min.**(instead of a
 **While the app go into background mode-a timeout is set to count time for 5 min(to know when your done playing and set the end date for game)
 --used for game statistics(total play time)
 
-## Point distribution- each level has it's rank:1-3 stars.
+## Point distribution
 
+--each level has it's rank:1-3 stars.
 
 3 Stars:10 steps or less
 
