@@ -22,7 +22,7 @@ You have 5 strikes for a registered user, 3 for guest.
 ## How is it works:
 
 Map is a 2 dimensional grid-conatins clear brackets,obstacles,enemies.
-Game is rendering with Window.requestAnimationFrame() functions,which request from the browser to repaint, inside useLayoutEffect hook.
+Game is rendering with Window.requestAnimationFrame() function,which request from the browser to repaint, inside useLayoutEffect hook.
 (render the map consistently-game engine)
 enemies are made up of major amount of .png assets, inside a JSON format.
 with css, we use animate properties to change between assets-thats how the enemies and the player looks dynamically moving.
