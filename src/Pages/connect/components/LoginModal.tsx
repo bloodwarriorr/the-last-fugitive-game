@@ -1,4 +1,4 @@
-//מודל עוטף לדף הרשמה/דף התחברות בהתאמה
+
 import React, { useRef, useState } from "react";
 import { IonHeader, IonModal, IonTitle, IonToolbar } from "@ionic/react";
 import Login from "./Login";
