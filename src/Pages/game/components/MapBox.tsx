@@ -1,6 +1,3 @@
-//קומפוננטה אשר אחראית על הדפסת העמודות של הקומפוננטה
-//מביאה את הURL של המכשולים
-//משייכת data set מתאים
 
 import React, { createRef, RefObject, useEffect } from "react";
 import { RefBoxType } from "../../../Types/GameSettingsTypes";
@@ -39,7 +36,7 @@ const MapBox: React.FC<Props> = ({ boxesRef, boxCount, col, index, rowIndex, TIL
         isColider = true;
         break;
     }
-    //חישוב מעגלי של מספר התמונה-על מנת לא לחרוג במערך התמונות מבחינת אינדקס
+    
     return `url(${TILES_IMAGES[boxCount % TILES_IMAGES.length]})`;
   };
   const getColider = () => {
