@@ -1,4 +1,4 @@
-//מסך כניסה ראשי
+
 import { IonButton, IonContent, IonPage, useIonLoading } from "@ionic/react";
 import React, {useState } from "react";
 import { IonIcon } from "@ionic/react";
@@ -15,15 +15,15 @@ import PasswordResetModal from "./components/PasswordResetModal";
 type Props = {};
 
 const Connect: React.FC = (props: Props) => {
-  //אתחול סטייטים
+  
   const { setIsGuest, setCurrentUser,setIsRegisteredUser } = useUserContext();
   const router = useIonRouter();
   const { setCurrentLevel } = useLevelContext();
   const [isResetModal, setIsResetModal] = useState(false);
   const [isLoginModal,setIsLoginModal] = useState(false)
   const [present, dismiss] = useIonLoading();
-//במידה והזדהנו כאורח, הפונקציה תיצור עבורנו אובייקט אורח ותשמור את מזהה ID
-//בלוקאל במידה ולא קיים, במידה וקיים תשלוף את פרטיו מבסיס הנתונים ותעביר לדף ראשי
+
+
   const playAsGuest = async () => {
     present({message: "Logging In...",})
     const guestId = (await Preferences.get({ key: "guestId" })).value;
