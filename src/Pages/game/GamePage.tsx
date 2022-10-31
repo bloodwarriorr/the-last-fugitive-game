@@ -1,4 +1,4 @@
-//עמוד משחק ראשי
+
 import { IonContent, IonPage } from "@ionic/react";
 import React, { useState } from "react";
 import Header from "./components/Header";
@@ -20,7 +20,7 @@ const GamePage: React.FC = () => {
     setgameKey(gameKey + 1);
   };
 
-  //קומפוננטה עוטפת ראשית של שלב-מרנדרת את המפה, עם הגדרות השלב המתאימות על פי הקוד שלו
+  
   return (
     <IonPage key={gameKey}>
         <PlayerDataContextProvider currentLevel={currentLevel!}>
