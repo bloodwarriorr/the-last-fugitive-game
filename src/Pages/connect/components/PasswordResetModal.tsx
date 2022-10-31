@@ -1,4 +1,4 @@
-//מודל עוטף לדף איפוס סיסמא
+
 import {
   IonButton,
   IonHeader,
