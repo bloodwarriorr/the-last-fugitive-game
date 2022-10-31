@@ -1,4 +1,4 @@
-//קונטקסט למשתמש-מכיל את כל הסטייטים שאנו מעוניינים להוריד לכלל הקומפוננטות אשר משפיעות על משתמש
+
 import { Preferences } from "@capacitor/preferences";
 import React, { createContext, useContext, useEffect, useRef, useState } from "react";
 import {
@@ -51,9 +51,9 @@ const UserContextProvider: React.FC<React.ReactNode> = ({ children }) => {
   const [isRegisteredUser, setIsRegisteredUser] = useState(false);
   const [isGuest, setIsGuest] = useState(false);
   const [remainingGames, setRemainingGames] = useState<RemainingGamesType>();
-  //שולט בהוספת חיים כל זמן קצוב
+  
   const interval = useRef(setInterval(() => {}, REMAINING_GAMES_TIMER));
-//בכל פעם שהיה שינוי בסטייט כמות המשחקים-נאפס את האינטרוול ונתחיל מהתחלה
+
   useEffect(() => {
     clearInterval(interval.current);
     if (remainingGames && remainingGames.current < remainingGames.max) {
