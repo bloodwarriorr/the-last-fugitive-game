@@ -1,15 +1,15 @@
-//ייבוא סוגי האובייקטים מקומפוננטת סוגים
+
 import {
   UserSignupType,
   UserLoginType,
   PlayDatesType,
   LevelRankType,
 } from "../Types/userTypes";
-//קבוע אשר מכיל את נתיב השרת
+
 const SERVER = process.env.REACT_APP_API;
 
 //gets
-//מצא יוזר לפי מזהה ID
+
 export const fetchUserByid = async (id: string) => {
   const requestOptions = {
     method: "get",
@@ -26,7 +26,7 @@ export const fetchUserByid = async (id: string) => {
     throw new Error("Network Error!");
   }
 };
-//יבוא אובייקט חיים לטובת משתמש
+
 export const getLifeData = async () => {
   const requestOptions = {
     method: "get",
@@ -43,7 +43,7 @@ export const getLifeData = async () => {
     throw new Error("Network Error!");
   }
 };
-//ייבוא כלל השלבים
+
 export const getAllLevels = async () => {
   const requestOptions = {
     method: "get",
@@ -60,7 +60,7 @@ export const getAllLevels = async () => {
     throw new Error("Network Error!");
   }
 };
-//ייבוא כלל הרמזים
+
 export const getAllHints = async () => {
   const requestOptions = {
     method: "get",
@@ -77,7 +77,7 @@ export const getAllHints = async () => {
     throw new Error("Network Error");
   }
 };
-//ייבוא כלל האוואטרים
+
 export const getAllAvatars = async () => {
   const requestOptions = {
     method: "get",
@@ -97,7 +97,7 @@ export const getAllAvatars = async () => {
 
 //posts
 
-//הרשמת משתמש
+
 export const registerUser = async (user: UserSignupType) => {
   const requestOptions = {
     method: "POST",
@@ -118,7 +118,7 @@ export const registerUser = async (user: UserSignupType) => {
     throw new Error("Error while fetching data in register");
   }
 };
-//הפעלת שכחתי סיסמא-ישלח מייל איפוס סיסמא והפנייה לדף נחיתה ליצירת סיסמא חדשה
+
 export const resetPassword = async (email:string)=>{
   const requestOptions = {
     method: "POST",
@@ -135,7 +135,7 @@ export const resetPassword = async (email:string)=>{
   }
 }
 //register guest
-//הרשמת אורח
+
 export const registerGuest = async () => {
   
   const requestOptions = {
@@ -158,7 +158,7 @@ export const registerGuest = async () => {
 };
 
 //sign guest as user
-//הפיכת אורח למתשמש רשום
+
 export const signGuestAsUser = async (guest: UserSignupType) => {
   const requestOptions = {
     method: "POST",
@@ -182,7 +182,7 @@ export const signGuestAsUser = async (guest: UserSignupType) => {
 
 
 //login guest
-//התחברות אורח על ידי מציאתו בעזרת מזהה ID
+
 export const fetchGuestById = async (id: string) => {
   const requestOptions = {
     method: "get",
@@ -199,7 +199,7 @@ export const fetchGuestById = async (id: string) => {
     throw new Error("Network Error!");
   }
 };
-//התחברות משתמש רשום -אותנטיקציה מתבצעת בשרת
+
 export const loginUser = async (user: UserLoginType) => {
   const requestOptions = {
     method: "POST",
@@ -222,7 +222,7 @@ export const loginUser = async (user: UserLoginType) => {
 };
 
 //puts
-//עדכון מערך השלבים-הוספת שלב בדירוג מסויים
+
 export const addLevelRank = async (
   id: string,
   token: string,
@@ -253,7 +253,7 @@ export const addLevelRank = async (
     throw new Error("Error while fetching data in register");
   }
 };
-//עדכון אווטר בפרופיל
+
 export const updateUserAvatar = async (
   id: string,
   token: string,
@@ -281,7 +281,7 @@ export const updateUserAvatar = async (
     throw new Error("Error while fetching data in register");
   }
 };
-//עדכון כינוי בפרופיל
+
 export const updateUserNickname = async (
   id: string,
   token: string,
@@ -310,7 +310,7 @@ export const updateUserNickname = async (
     throw new Error("Error while fetching data in register");
   }
 };
-//עדכון הגדרות-האם ברצוני לקבל עדכונים
+
 export const updateUserNotification = async (
   id: string,
   token: string,
@@ -341,7 +341,7 @@ export const updateUserNotification = async (
     throw new Error("Error while fetching data in register");
   }
 };
-//הוספת תאריך משחק של משתמש מסויים-שעת התחלה עד שעת סיום
+
 export const addUserPlayDate = async (
   id: string,
   token: string,
@@ -372,7 +372,7 @@ export const addUserPlayDate = async (
     throw new Error("Error while fetching data in register");
   }
 };
-//עדכון שלב נוכחי למשתמש מסויים
+
 export const updateUserCurrentLevel = async (
   id: string,
   token: string,
@@ -403,7 +403,7 @@ export const updateUserCurrentLevel = async (
     throw new Error("Error while fetching data in register");
   }
 };
-//עדכון פופולריות שלב למשתמש מסויים
+
 export const updateLevelPopulatiry = async (
   id: string,
   token: string,
@@ -434,7 +434,7 @@ export const updateLevelPopulatiry = async (
     throw new Error("Error while fetching data in register");
   }
 };
-//עדכון דירוג שלב מסויים במערך השלבים של המשתמש-למשל 3 כוכבים במקום 2
+
 export const updateLevelRank = async (
   id: string,
   token: string,
