@@ -1,4 +1,4 @@
-//דף התחברות
+
 import React, { SetStateAction, useState, useRef } from "react";
 import { IonAlert, IonButton, IonInput, IonItem, useIonToast } from "@ionic/react";
 import { UserLoginType } from "../../../Types/userTypes";
@@ -8,7 +8,7 @@ import { useIonRouter } from "@ionic/react";
 import { Preferences } from "@capacitor/preferences";
 import { useLevelContext } from "../../context/LevelContext";
 import { TOAST_DURATION } from "../../../utils/Constants";
-//הגדרת טיפוסים
+
 type Props = {
   setisLoginComponent: React.Dispatch<SetStateAction<boolean>>;
   openLoader: ({}) => void;
@@ -59,7 +59,7 @@ const Login: React.FC<Props> = (props) => {
     props.setIsResetModal(true);
     props.setIsLoginModal(false);
   };
-//פונקציית התחברות- מקבלת אימייל וסיסמא ומפעילה את פונקציית האימות בשרת
+
   const login = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!user.email || !user.password) {
